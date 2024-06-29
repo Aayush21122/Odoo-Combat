@@ -1,51 +1,81 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="login-signup.css">
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="login-signup.css">
 
-      <title>Login form - Bedimcode</title>
-   </head>
-   <body>
-      <div class="login">
-         <img src="bg-login.webp" alt="image" class="login__bg">
-
-         <form action="" class="login__form">
-            <h1 class="login__title">Login</h1>
-
-            <div class="login__inputs">
-               <div class="login__box">
-                  <input type="email" placeholder="Email ID" required class="login__input">
-                  <i class="ri-mail-fill"></i>
-               </div>
-
-               <div class="login__box">
-                  <input type="password" placeholder="Password" required class="login__input">
-                  <i class="ri-lock-2-fill"></i>
-               </div>
-            </div>
-
-            <div class="login__check">
-               <div class="login__check-box">
-                  <input type="checkbox" class="login__check-input" id="user-check">
-                  <label for="user-check" class="login__check-label">Remember me</label>
-               </div>
-
-               <a href="#" class="login__forgot">Forgot Password?</a>
-            </div>
-
-            <button type="submit" class="login__button">Login</button>
-
-            <div class="login__register">
-               Don't have an account? <a href="#">Register</a>
-            </div>
-         </form>
+   <title>Login form - Bedimcode</title>
+   
+</head>
+<body>
+   <!-- Navbar -->
+   <nav class="navbar">
+      <div class="navbar-container">
+         <a href="#" class="navbar-logo">Your Logo</a>
+         <ul class="navbar-menu">
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">Sign Up</a></li>
+            
+         </ul>
+         <div class="navbar-toggle"><i class="ri-menu-line"></i></div>
       </div>
-   </body>
+   </nav>
+
+   <!-- Login Form -->
+   <div class="login">
+    <img src="bg-login.webp" alt="image" class="login__bg">
+
+    <form action="" class="login__form">
+       <h1 class="login__title">Login</h1>
+
+       <div class="login__inputs">
+          <div class="login__box">
+             <input name="email" type="email" placeholder="Email ID" required class="login__input">
+             <i class="ri-mail-fill"></i>
+          </div>
+
+          <div class="login__box">
+             <input type="password" name="password" placeholder="Password" required class="login__input">
+             <i class="ri-lock-2-fill"></i>
+          </div>
+       </div>
+
+       <div class="login__check">
+          <div class="login__check-box">
+             <input type="checkbox" name="remember" class="login__check-input" id="user-check">
+             <label for="user-check" class="login__check-label">Remember me</label>
+          </div>
+
+          <a href="#" class="login__forgot">Forgot Password?</a>
+       </div>
+
+       <button type="submit" class="login__button">Login</button>
+
+       <div class="login__register">
+          Don't have an account? <a href="#">Sign Up</a>
+       </div>
+    </form>
+ </div>
+
+   <!-- JavaScript for Navbar Toggle -->
+   <script>
+      const navbarToggle = document.querySelector('.navbar-toggle');
+      const navbarMenu = document.querySelector('.navbar-menu');
+
+      navbarToggle.addEventListener('click', () => {
+         navbarMenu.classList.toggle('active');
+      });
+   </script>
+</body>
 </html>
+
+
+
+      
+   
