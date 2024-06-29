@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Workout - Measurements</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <div class="measurements-container">
+    <h1>Enter Your Measurements</h1>
+    <form id="measurementsForm">
+      <div class="input-group">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age"  min='0' placeholder="Enter age" required >
+      </div>
+      <div class="input-group">
+        <label for="weight">Weight (kg)</label>
+        <input type="number" id="weight" name="weight"  min='0' placeholder="Enter Weight" required>
+      </div>
+      <div class="input-group">
+        <label for="height">Height (cm)</label>
+        <input type="number" id="height" name="height" min="0" placeholder="Enter Height" required>
+      </div>
+      <button type="submit" class="button" onclick="goToFitnessStep()" >Next</button>
+    </form>
+  </div>
+  <script src="profile.js"></script>
+</body>
+</html>

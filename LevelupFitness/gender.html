@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Workout - Gender Selection</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <div class="gender-container">
+    <h1>What's your Gender?</h1>
+      <p class="info-text">Knowing your gender helps us tailor the workout for you based on your metabolic rate.</p>
+    
+    <div class="gender-selection">
+      <div class="gender-option" onclick="selectGender('Male')">
+        <img src="img/male.jpg" alt="Male" class="gender-image">
+        <div class="overlay">
+          <div class="text">Male</div>
+        </div>
+      </div>
+      <div class="gender-option" onclick="selectGender('Female')">
+        <img src="img/female.jpg" alt="Female" class="gender-image">
+        <div class="overlay">
+          <div class="text">Female</div>
+        </div>
+      </div>
+    </div>
+    
+    <button class="button" onclick="goToMeasureStep()">Next</button>
+  </div>
+
+  <script src="profile.js">
+    
+  </script>
+</body>
+</html>
