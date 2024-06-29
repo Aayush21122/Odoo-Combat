@@ -28,20 +28,9 @@ function selectGender(gender) {
 }
 
 function goToMeasureStep() {
-
   window.location.href = 'measurement.html';
 }
 function goToFitnessStep() {
-  const age = document.getElementById('age').value;
-  const weight = document.getElementById('weight').value;
-  const height = document.getElementById('height').value;
-
-  console.log('Age:', age);
-  console.log('Weight:', weight);
-  console.log('Height:', height);
-  Age=age
-  Weight=weight
-  Height=height
   window.location.href = 'fitness.html';
 }
 
@@ -54,14 +43,10 @@ function goToUsermodel() {
 }
 
 function goToTimePeriod() {
-  const experience = document.querySelector('input[name="gymExperience"]:checked').value;
-  Experience=experience
   
-  if (experience === 'yes') {
+  
     window.location.href = 'timeperiod.html';
-  } else {
-    window.location.href = 'home.html';
-  }
+  
 }
 
 
