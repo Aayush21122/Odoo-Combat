@@ -100,7 +100,7 @@ img {
 
 .login__input {
   width: 100%;
-  background: none;
+  background: transparent;
   color: var(--white-color);
   padding-block: 1rem;
 }
