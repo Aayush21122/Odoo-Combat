@@ -1,36 +1,4 @@
-// const exp = require('express')
-// const app = exp()
-// const {addUser , getUser} = require('./pg.js')
-// app.use(exp.static(__dirname, { index: 'signup.html' }))
-// console.log(__dirname)
-// app.use(exp.urlencoded({extended:false}))
-// app.post('/login', (req, res) => {
-//     const name = req.body.name
-//     const email = req.body.email
-//     const pass = req.body.password
-//     const con_pass = req.body.confirmpassword
 
-//     // if (pass == con_pass ){
-//     addUser(name , email , pass )
-//     res.render(__dirname + '/login.html');
-//     res.send()
-//     // }
-// })
-// // app.post('/login'  ,(req,res)=>{
-// //     res.sendFile('login.html')
-// // })
-// app.post('/profile' ,(req,res)=>{
-//     res.sendFile(__dirname+'/login.html')
-//     const email = req.body.email
-//     const pass = req.body.password
-
-//     const users =  getUser(email)
-//     if ((users[2] == pass) && users){
-//        console.log('DONE')
-//     }
-// })
-
-// app.listen(5000)
 
 
 const express = require('express');
