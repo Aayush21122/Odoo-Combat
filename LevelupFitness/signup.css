@@ -154,19 +154,6 @@ img {
   cursor: pointer;
 }
 
-.login__register {
-  font-size: var(--small-font-size);
-  text-align: center;
-}
-
-.login__register a {
-  color: var(--white-color);
-  font-weight: 500;
-}
-
-.login__register a:hover {
-  text-decoration: underline;
-}
 
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices */
