@@ -153,7 +153,19 @@ img {
   font-weight: 500;
   cursor: pointer;
 }
-
+.login__register {
+    font-size: var(--small-font-size);
+    text-align: center;
+  }
+  
+  .login__register a {
+    color: var(--white-color);
+    font-weight: 500;
+  }
+  
+  .login__register a:hover {
+    text-decoration: underline;
+  }
 
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices */
@@ -204,7 +216,7 @@ img {
   }
   
   .navbar-menu li a {
-    color: var(--white-color); /* Use text color for menu links */
+    color: rgb(34, 128, 0); /* Use text color for menu links */
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;

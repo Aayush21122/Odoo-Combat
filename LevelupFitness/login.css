@@ -217,7 +217,7 @@ img {
   }
   
   .navbar-menu li a {
-    color: var(--white-color); /* Use text color for menu links */
+    color: rgb(34, 128, 0); /* Use text color for menu links */
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
